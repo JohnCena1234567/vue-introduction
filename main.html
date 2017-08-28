@@ -4,6 +4,19 @@
 	<title></title>
 </head>
 <body>
-
+	<h1>Titill</h1>
+	<p>Grein</p>
+	<div id="app">
+		<p>{{ message }}</p>
+	</div>
+	<script src="https://unpkg.com/vue"></script>
+	<script type="text/javascript">
+		var app = new Vue({
+			el: '#app',
+			data: {
+				message: 'Hello Vue!'
+			}
+		});
+	</script>
 </body>
 </html>
