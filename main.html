@@ -7,15 +7,23 @@
 </head>
 <body>
 	<h1>Vue introduction</h1>
-	<div id="app" class="field">
-		<div class="control">
-			<input class="input is-primary" type="text" v-model="firstname" placeholder="First Name">
-			<input class="input is-primary" type="text" v-model="lastname" placeholder="Last Name">
+	<div id="app">
+		<div class="field">
+			<div class="control">
+				<input class="input is-primary" type="text" v-model="firstname" placeholder="First Name">
+			</div>
+		</div>
+
+		<div class="field">
+			<div class="control">
+				<input class="input is-primary" type="text" v-model="lastname" placeholder="Last Name">
+			</div>
+		</div>
+		
 			<p> Nafnið þitt er:
 				<span v-text="firstname"></span>
 				<span v-text="lastname"></span>
-			</p>
-		</div>
+			</p>	
 	</div>
 	<script src="https://unpkg.com/vue"></script>
 	<script type="text/javascript">
